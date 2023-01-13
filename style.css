@@ -8,9 +8,7 @@
 body{
     background-color: #E5E5E5;
 }
-section{
-    margin-top: 20px;
-}
+
 header {
     display: flex;
     background-color: #562EFF;
@@ -50,47 +48,44 @@ li a, li{
 /* Top players and blog */
 .topers{
     background-color:white;
-    margin: 285px;
+    margin: 0 285px;
 }
 .players{
     margin-left: 30px ;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-bottom: 20px;
 }
 .topers h1{
     padding:33px
 }
 .player img{
     width: 56px;
-    padding-bottom: 30px;
+    height: 56px;
+    margin: 15px 0;
+    /* padding-bottom: 30px; */
 
 }
 .player{
     display: flex;
-    gap: 18px;
+    gap: 35px;
+    align-items: center;
 }
 /* Blogers */
 .blog img {
     width: 177px;
     border-radius: 7px;
+    margin: 20px 0;
+}
+.blog{
+    display: flex;
+    gap: 20px;
+    padding-left: 36px;
 }
 .blogers{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.blog-name{
-    grid-area: blog;
-}
-.blog-pic{
-    grid-area: blogPic;
-}
-.bloger-name{
-    grid-area: bloger;
-}
-.blog{
-    display: grid;
-    gap: -20PX;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "blocPic  blog" " bloger" ;
-    }
+
